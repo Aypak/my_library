@@ -1,0 +1,25 @@
+- if user_signed_in?
+	%h3 All Books
+	%ul
+		- @books.each do |book|
+			%li
+				%h5= book.title
+				%p= book.author
+				%p= book.description
+
+	%h3 My Books
+	%ul
+		- current_user.books.each do |book|
+			%li
+				%h5= book.title
+				%p= book.author
+				=link_to "Return Book"
+
+	%h3 Available
+	%ul
+		- @books.each do |book|
+			-if book.user_id == nil
+				%li
+					%h5= book.title
+					%p= book.author
+					=link_to 'checkout',controller: 'books', method: 'update', id: book, action: 'update'

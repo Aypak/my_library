@@ -1,0 +1,29 @@
+my_library is a personal lending library app written with ruby on rails
+models
+-book
+-person
+
+controllers
+-books_controller
+-library_controller
+
+how the app is structured
+book attributes: title
+		author
+		upvotes/likes
+		downvotes/dislikes
+		summary
+    association :person_id => belongs_to :person
+person attributes: name
+		   maximum books
+	association :books => has_any :books
+
+main methods in app
+-add/remove_person
+-add/remove_book
+-checkuout_book
+-checkin_book
+-login/logout=> admin, user
+-view_available_books
+
+

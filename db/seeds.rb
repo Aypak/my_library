@@ -1,0 +1,5 @@
+Book.create(title: 'Lord of the Flies', author: 'William Golding', description: "A fat boy, a thin boy, and a pig's head")
+Book.create(title: 'Don Quixote', author: 'Cervantes', description: "A spaniard that went screwing around Europe")
+Book.create(title: 'Things Fall Apart', author: 'Chinua Achebe', description: "The tough guy at the beginning dies at the end")
+Book.create(title: 'To Kill A Mockingbird', author: 'Harper Lee', description: "Racism in 1950s America")
+Book.create(title: 'Green Bacon and Eggs', author: 'Dr. Seus', description: 'Its Dr.Seus,what else do you need to know')
